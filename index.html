@@ -1,86 +1,85 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
+    <title>OCOM-MITIC</title>
     <meta charset="UTF-8">
-    <title>MITIC - Accueil</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
 <body>
 
-    <!-- HEADER -->
-    <div id="header">
+<!-- Sidebar/menu -->
+<nav 
+class="sidebar red collapse top large padding"
+id="main-sidebar"
+>
+  <br>
 
-        <div class="logo">
-            <h1>PhotoVision</h1>
-            <p>Capturer les plus beaux moments</p>
-        </div>
+  <a href="javascript:void(0)"
+    id="menu-button"
+    class="close-menu-btn hide-large display-topleft">
+    Fermer
+  </a>
 
-        <div class="navigation">
-            <a href="index.html">Accueil</a>
-            <a href="galerie.html">Galerie</a>
-            <a href="apropos.html">À propos</a>
-            <a href="contact.html">Contact</a>
-        </div>
+  <div class="container">
+    <h3 class="padding-64"><b>OCOM<br>MITIC</b></h3>
+  </div>
 
+  <div class="bar-block">
+    <a href="#" onclick="w3_close()" class="bar-item button hover-white">Home</a>
+    <a href="#9" id="menu-button" class="bar-item button hover-white">9ème année</a>
+    <a href="#10" id="menu-button" class="bar-item button hover-white">10ème année</a>
+    <a href="#11" id="menu-button" class="bar-item button hover-white">11ème année</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="container top hide-large red xlarge padding">
+  <a href="javascript:void(0)"
+     class="button red margin-right"
+     onclick="w3_open()">☰</a>
+  <span>OCOM-MITIC</span>
+</header>
+
+<!-- Overlay -->
+<div class="overlay hide-large"
+     onclick="w3_close()"
+     style="cursor:pointer"
+     title="close side menu"
+     id="myOverlay"></div>
+
+<!-- PAGE CONTENT -->
+<div class="main-content">
+
+  <!-- 9ème année -->
+  <div class="container" id="9">
+    <h1 class="title-violet"><b>9ème année.</b></h1>
+    <hr class="section-devider">
+    <p>Projets de 9ème année</p>
+  </div>
+
+    <!-- 10ème année -->  
+    <div class="container" id="10">
+        <h1 class="title-violet"><b>10ème année.</b></h1>
+        <hr class="section-devider">
+        <p>Projets de 10ème année</p>
+  </div> 
+  
+    <!-- 11ème année -->
+    <div class="container" id="11">
+        <h1 class="title-violet"><b>11ème année.</b></h1>
+        <hr class="section-devider">
+        <p>Projets de 11ème année</p>
     </div>
 
+<footer class="container center padding-32">
+  <p>
+    Ce site a été créé a des fins éducatives. <br>
+  </p>
+</footer>
 
-    <!-- CONTENU PRINCIPAL -->
-    <div id="main-content">
-
-        <div class="presentation">
-            <h2>Bienvenue sur PhotoVision</h2>
-
-            <p>
-                Ce site présente une collection de photographies sur différents thèmes :
-                paysages, animaux, portraits et voyages.
-            </p>
-
-            <p>
-                Découvrez des images de qualité et laissez-vous inspirer par l'univers
-                de la photographie.
-            </p>
-        </div>
-
-        <div class="featured-photo">
-            <h2>Photo de la semaine</h2>
-
-            <img src="images/photo-semaine.jpg"
-                 alt="Photo de paysage">
-
-            <p>
-                Chaque semaine, une nouvelle photographie est mise à l'honneur.
-            </p>
-        </div>
-
-    </div>
-
-
-    <!-- FOOTER -->
-    <div id="footer">
-
-        <div class="credits">
-            <h3>Crédits</h3>
-            <p>Site réalisé par l'équipe PhotoVision.</p>
-        </div>
-
-        <div class="organisation">
-            <h3>À propos</h3>
-            <p>Projet de partage et de promotion de la photographie.</p>
-        </div>
-
-        <div class="social-media">
-            <h3>Réseaux sociaux</h3>
-
-            <a href="#">Instagram</a><br>
-            <a href="#">Facebook</a><br>
-            <a href="#">YouTube</a>
-        </div>
-
-    </div>
+<script src="main.js"></script>
 
 </body>
-
 </html>

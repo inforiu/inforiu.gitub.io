@@ -1,17 +1,80 @@
-#header {
-    background-color: black;
-    color: white;
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Poppins", sans-serif;
 }
 
-.navigation a {
-    color: white;
-    margin: 10px;
+body {
+    font-size: 16px;
+    margin:0;
+    padding-top:0.01em;
+    padding-bottom:0.01em;
 }
 
-.featured-photo img {
-    width: 400px;
+.top{
+    position:fixed;
+    left:0;
+    width:100%;
+    z-index:1;
+    top:0;
 }
 
-#footer {
-    background-color: lightgray;
+.collapse{
+    display: none;
 }
+
+/* Sidebar */
+
+.sidebar {
+    z-index: 3;
+    width: 300px;
+    font-weight: bold;
+}
+
+.close-menu-btn {
+    width: 100%;
+    font-size: 22px;
+}
+
+
+
+/* Titres */
+
+.title-violet {
+    font-size: 32px;
+    color: #3d2b3d;
+}
+
+/* Contenu principal */
+
+.container {
+    margin-top: 80px;
+}
+
+.main-content {
+    margin-left: 340px;
+    margin-right: 40px;
+}
+
+/* Ligne rouge */
+
+.section-devider {
+    width: 50px;
+    border: 5px solid #9b1d20;
+    border-radius: 25px;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Footer */
+
+.footer-area {
+    margin-top: 75px;
+    padding-right: 58px;
+}
+
