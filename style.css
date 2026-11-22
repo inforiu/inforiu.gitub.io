@@ -1,0 +1,17 @@
+#header {
+    background-color: black;
+    color: white;
+}
+
+.navigation a {
+    color: white;
+    margin: 10px;
+}
+
+.featured-photo img {
+    width: 400px;
+}
+
+#footer {
+    background-color: lightgray;
+}
