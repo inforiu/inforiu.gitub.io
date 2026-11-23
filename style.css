@@ -12,6 +12,7 @@ body {
     margin:0;
     padding-top:0.01em;
     padding-bottom:0.01em;
+    background-color: #fffef9;
 }
 
 .top{
@@ -26,20 +27,63 @@ body {
     display: none;
 }
 
-/* Sidebar */
-
-.sidebar {
-    z-index: 3;
-    width: 300px;
-    font-weight: bold;
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #4d6cfa;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
 
-.close-menu-btn {
-    width: 100%;
-    font-size: 22px;
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #f3efe0;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
 }
 
+.level-1 {
+  font-size: 28px!important;
+}
 
+.level-2 {
+  font-size: 22px;
+}
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f3efe0BF;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: #344aad;
+  color: #f3efe0;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #253370;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 
 /* Titres */
 
@@ -59,11 +103,14 @@ body {
     margin-right: 40px;
 }
 
+.padding-64{
+    padding-block:64px!important
+}
 /* Ligne rouge */
 
 .section-devider {
     width: 50px;
-    border: 5px solid #9b1d20;
+    border: 5px solid #4d6cfa;
     border-radius: 25px;
 }
 
