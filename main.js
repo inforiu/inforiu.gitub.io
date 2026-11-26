@@ -1,16 +1,25 @@
-//* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
+fetch("/sidenav.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("nav").innerHTML = data;
+        initDropdowns();
+    });
 
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
+function initDropdowns() {
+    document.querySelectorAll(".dropdown-btn")
+        .forEach(button => {
+
+            button.addEventListener("click", () => {
+
+                button.classList.toggle("active");
+
+                const content = button.nextElementSibling;
+
+                content.style.display =
+                    content.style.display === "block"
+                    ? "none"
+                    : "block";
+            });
+
+        });
 }
-
